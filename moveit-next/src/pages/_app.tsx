@@ -1,13 +1,10 @@
-import '../styles/global.css';
+import "../styles/global.css";
 
-import {ChallengesProvider} from '../contexts/ChallengesContext';
+import { ChallengesProvider } from "../contexts/ChallengesContext";
+import { CountdownContext } from "../contexts/CountdownContext";
 
 function MyApp({ Component, pageProps }) {
-  return(
-    <ChallengesProvider>
-      <Component {...pageProps} />
-    </ChallengesProvider>
-  )
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
